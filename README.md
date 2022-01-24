@@ -1,6 +1,6 @@
 # Otoscopy Predictions
 
-Using otoscopy images with neural networks to predict whether someone's ear has an infection. Here we will use some convolutional neural networks to predict if the otoscopy contains an ear that is abnormal (has acute otis media) or normal (no infection).
+Using otoscopy images with neural networks to predict whether someone's ear has an infection. Here we will use some convolutional neural networks to predict if the otoscopy contains an ear that is abnormal (has acute otitis media) or normal (no infection).
 
 
 ## Methodology
@@ -16,7 +16,7 @@ Also since acute otitis media doesn't depend on color for diagnosis and otoscopy
 ## Models
 
 ### Convolutional Neural Network
-Our first model used was a generic convolutional neural network to see what the prediction accuracy would be. We included early stopping within the model, which will stop the epochs (otherwise known as how many passes the dataset has gone forwards and backwards in its entirity) based on the conditions we've given it. We've also made sure to balance the class weights since our normal class includes more imagery than our abnormal. With this, and with our model knowing when to stop going through iterations when further progress isn't being made, we've reduced the learning rate and improved the quality of the model over all. Unfortunately, it scored relatively low with only a 41 percent score of predicting a normal or abnormal otoscope so the next step was to fine tune the parameters. 
+Our first model used was a generic convolutional neural network to see what the prediction accuracy would be. We included early stopping within the model, which will stop the epochs (otherwise known as how many passes the dataset has gone forwards and backwards in its entirety) based on the conditions we've given it. We've also made sure to balance the class weights since our normal class includes more imagery than our abnormal. With this, and with our model knowing when to stop going through iterations when further progress isn't being made, we've reduced the learning rate and improved the quality of the model over all. Unfortunately, it scored relatively low with only a 41 percent score of predicting a normal or abnormal otoscope so the next step was to fine tune the parameters. 
 
 
 ### CNN Part Two
@@ -37,7 +37,7 @@ The VGG model was the next choice for the dataset as it is known for it's classi
 
 
 ## LIME
-Although we have chosen our model that works well with our dataset, there is another process that we wished to include. This is the LIME process (or "Local Interpretable Model-agnostic Explanations") that we have decided to incorporate into our project. LIME explains why our model comes to the predictive conclusions it does in images as well as tries to predict what the image is as well. Obviously, once more our small dataset will run into some issues since otoscopies are not as common as images of cats and dogs. Therefore, LIME was included due to it's fascinating process but is not very helpful at this time. Here with the image below, you can see that with how LIME believes our otoscopy is most likekly a jelly fish or baloon. 
+Although we have chosen our model that works well with our dataset, there is another process that we wished to include. This is the LIME process (or "Local Interpretable Model-agnostic Explanations") that we have decided to incorporate into our project. LIME explains why our model comes to the predictive conclusions it does in images as well as tries to predict what the image is as well. Obviously, once more our small dataset will run into some issues since otoscopies are not as common as images of cats and dogs. Therefore, LIME was included due to it's fascinating process but is not very helpful at this time. Here with the image below, you can see that with how LIME believes our otoscopy is most likely a jelly fish or balloon. 
 
 
 
@@ -46,4 +46,4 @@ Although we have chosen our model that works well with our dataset, there is ano
 
 
 ## Results
-As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Given the contraints of the size and the atypical nature of the dataset, this model worked well but could be improved in the future if given the chance to include more otoscopy imagery and same could be said for LIME.  
+As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Given the constraints of the size and the atypical nature of the dataset, this model worked well but could be improved in the future if given the chance to include more otoscopy imagery and same could be said for LIME.  
