@@ -37,9 +37,12 @@ The VGG model was the next choice for the dataset as it is known for it's classi
 
 
 ## LIME
-Although we have chosen our model that works well with our dataset, there is another process that we wished to include. This is the LIME process (or "Local Interpretable Model-agnostic Explanations") that we have decided to incorporate into our project. LIME explains why our model comes to the predictive conclusions it does in images as well as tries to predict what the image is as well. Obviously, once more our small dataset will run into some issues since otoscopies are not as common as images of cats and dogs. Therefore, LIME was included due to it's fascinating process but is not very helpful at this time.  
+Although we have chosen our model that works well with our dataset, there is another process that we wished to include. This is the LIME process (or "Local Interpretable Model-agnostic Explanations") that we have decided to incorporate into our project. LIME explains why our model comes to the predictive conclusions it does in images as well as tries to predict what the image is as well. Obviously, once more our small dataset will run into some issues since otoscopies are not as common as images of cats and dogs. Therefore, LIME was included due to it's fascinating process but is not very helpful at this time. Here with the image below, you can see that with how LIME believes our otoscopy is most likekly a jelly fish or baloon. 
 
-###NCLUDE LIME IMAGERY HERE; TALK ABOUT IT WHAT THAT IMAGE IS BELOW?
+
+
+![LIMEresults](https://user-images.githubusercontent.com/79724188/150870641-bc5cfbbc-26de-43ad-950b-c9ca9a6ea63d.jpeg)
+
 
 
 ## Results
