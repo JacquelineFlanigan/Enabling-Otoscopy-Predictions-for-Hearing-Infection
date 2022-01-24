@@ -25,7 +25,7 @@ From what we were able to gather from our first model, it had stopped at the eig
 
 
 
-###INCLUDE IMAGERY HERE OF BAD RESUTS FROM TEST 2
+![badCNN2resultssmaller](https://user-images.githubusercontent.com/79724188/150870337-23b97428-48bd-49c4-b0ab-eaad6d2cdca5.png)
 
 
 
