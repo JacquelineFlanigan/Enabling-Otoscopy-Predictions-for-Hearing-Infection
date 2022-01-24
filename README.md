@@ -15,7 +15,7 @@ Also since acute otitis media doesn't depend on color for diagnosis and otoscopy
 
 ### Models
 
-# Convolutional Neural Network
+## Convolutional Neural Network
 Our first model used was a generic convolutional neural network to see what the prediction accuracy would be. We included early stopping within the model, which will stop the epochs (otherwise known as how many passes the dataset has gone forwards and backwards in its entirity) based on the conditions we've given it. We've also made sure to balance the class weights since our normal class includes more imagery than our abnormal. With this, and with our model knowing when to stop going through iterations when further progress isn't being made, we've reduced the learning rate and improved the quality of the model over all. Unfortunately, it scored relatively low with only a 41 percent score of predicting a normal or abnormal otoscope so the next step was to fine tune the parameters. 
 
 
