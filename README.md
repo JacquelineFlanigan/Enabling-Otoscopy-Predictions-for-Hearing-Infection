@@ -46,7 +46,7 @@ Although we have chosen our model that works well with our dataset, there is ano
 
 
 ## Results
-As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Below we can take a look at our accuracy plot to verify that both the train and test accuracy was high for the model in addition to having an improved confusion matrix. Here we can see that the model's prediction has gotten better as out of the abnormal class, 169 images were predicted correctly and of the normal class, 39. With this model, we can confidently predict whether someone has acute otitis media based on their otoscope. 
+As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Below we can take a look at our accuracy plot to verify that both the train and test accuracy was high for the model in addition to having an improved confusion matrix. Here when we focus on the images containing aom, we can see that the model's prediction has gotten better as out of the abnormal class, 169 images were predicted correctly. With this model, we can confidently predict whether someone has acute otitis media based on their otoscope. 
 
 
 ![confusionmatrixfinalmodel](https://user-images.githubusercontent.com/79724188/151441587-3ea92282-cbf8-4687-8864-459a785ca986.png)
