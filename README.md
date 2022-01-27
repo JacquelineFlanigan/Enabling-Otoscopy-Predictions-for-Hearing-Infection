@@ -25,11 +25,11 @@ From what we were able to gather from our first model, it had stopped at the eig
 
 
 
-![badCNN2resultssmaller](https://user-images.githubusercontent.com/79724188/150870337-23b97428-48bd-49c4-b0ab-eaad6d2cdca5.png)
+![confusionmatrixbadmodel](https://user-images.githubusercontent.com/79724188/151444487-d7dd7137-eaf4-4bb5-95c7-bd31e932955e.png)
 
 
 
-Although we have already come to the deduction that the CNN model isn't the model we will stick with, we did want to show visually as to how it isn't the right match for us. In the graph above, randomly selected images have had their hues changed and our model tried to identify which ones were which. Again, this just verifies that the CNN model isn't our best choice of model for the dataset.
+Although we have already come to the deduction that the CNN model isn't the model we will stick with, we did want to show visually as to how it isn't the right match for us. In the confusion matrix above, we can see that the model is predicting to have 171 cases of the normal class, but they are in fact abnormal. Again, this just verifies that the CNN model isn't our best choice of model for the dataset.
 
 
 ## VGG16
@@ -46,4 +46,10 @@ Although we have chosen our model that works well with our dataset, there is ano
 
 
 ## Results
-As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Given the constraints of the size and the atypical nature of the dataset, this model worked well but could be improved in the future if given the chance to include more otoscopy imagery and same could be said for LIME.  
+As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Below we can take a look at our accuracy plot to verify that both the train and test accuracy was high for the model in addition to having an improved confusion matrix. Here we can see that the model's prediction has gotten better as out of the abnormal class, 169 images were predicted correctly and of the normal class, 39. With this model, we can confidently predict whether someone has acute otitis media based on their otoscope. 
+
+
+![confusionmatrixfinalmodel](https://user-images.githubusercontent.com/79724188/151441587-3ea92282-cbf8-4687-8864-459a785ca986.png)
+
+
+![accuracy plot](https://user-images.githubusercontent.com/79724188/151441605-ef15c725-7d97-4e4e-b0b6-ef0b18323e9e.png)
