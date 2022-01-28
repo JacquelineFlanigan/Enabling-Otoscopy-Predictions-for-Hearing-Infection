@@ -21,11 +21,11 @@ Our first model used was a generic convolutional neural network to see what the 
 
 ### CNN Part Two
 
-From what we were able to gather from our first model, it had stopped at the eighth epoch and after the fourth epoch, the accuracy declined significantly. Changing the model based on this information, we reran the model to see if this would improve the results. Unfortunately, with the changes made, our model returned with worse results with having an accuracy of around 17 percent. This isn't uncommon with testing models, as usually the generic model has already been modified for efficiency. This did lead to the conclusion that perhaps the CNN model is not the right type of model needed for this dataset.
+From what we were able to gather from our first model, it had stopped at the eighth epoch and after the fourth epoch, the accuracy declined slightly. Changing the model based on this information, we reran the model to see if this would improve the results. Unfortunately, with the changes made, our model returned with worse results. This isn't uncommon with testing models, as usually the generic model has already been modified for efficiency. This did lead to the conclusion that perhaps the CNN model is not the right type of model needed for this dataset.
 
 
 
-![confusionmatrixbadmodel](https://user-images.githubusercontent.com/79724188/151444487-d7dd7137-eaf4-4bb5-95c7-bd31e932955e.png)
+![confusionmatrixbadmodel](https://user-images.githubusercontent.com/79724188/151618791-1ee37cd5-6472-4662-946a-f8375ef12ce1.png)
 
 
 
@@ -33,7 +33,7 @@ Although we have already come to the deduction that the CNN model isn't the mode
 
 
 ## VGG16
-The VGG model was the next choice for the dataset as it is known for it's classification and localization of images, with it being pretrained on over 1,000 images. Implementing this type of model, we saw our accuracy improve greatly going from 17 percent up to around 80 percent. This indicated that the VGG model is better over all for what we hope to achieve, which makes sense given the type of model it is. In addition to this, with this model we did implement data augmentation as to help flush out the imbalance of the classes as well as used the "adam" parameter since it is known for running well with sparse data. The predictive power of this model also faired well given the tricky dataset it dealt with, so therefore we can confidently choose this as the model we will use.
+The VGG model was the next choice for the dataset as it is known for it's classification and localization of images, with it being pretrained on over 1,000 images. Implementing this type of model, we saw our accuracy improve greatly going from 52 percent up to around 80 percent! This indicated that the VGG model is better over all for what we hope to achieve, which makes sense given the type of model it is. In addition to this, with this model we did implement data augmentation as to help flush out the imbalance of the classes as well as used the "adam" parameter since it is known for running well with sparse data. The predictive power of this model also faired well given the tricky dataset it dealt with, so therefore we can confidently choose this as the model we will use.
 
 
 ## LIME
@@ -46,10 +46,10 @@ Although we have chosen our model that works well with our dataset, there is ano
 
 
 ## Results
-As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Below we can take a look at our accuracy plot to verify that both the train and test accuracy was high for the model in addition to having an improved confusion matrix. Here when we focus on the images containing aom, we can see that the model's prediction has gotten better as out of the abnormal class, 169 images were predicted correctly. With this model, we can confidently predict whether someone has acute otitis media based on their otoscope. 
+As stated above, the VGG16 model was our best fit for our data with an accuracy of 80 percent in it's predictive power and doesn't take much time to run. Below we can take a look at our accuracy plot to verify that both the train and test accuracy was high for the model in addition to having an improved confusion matrix. Here when we focus on the images containing aom, we can see that the model's prediction has gotten better as out of the abnormal class, 162 images were predicted correctly. With this model, we can confidently predict whether someone has acute otitis media based on their otoscope. 
 
 
-![confusionmatrixfinalmodel](https://user-images.githubusercontent.com/79724188/151441587-3ea92282-cbf8-4687-8864-459a785ca986.png)
+![confusionmatrixfinalmodel](https://user-images.githubusercontent.com/79724188/151620616-603f3f1d-1d45-4b5a-855d-6a656c608947.png)
 
 
-![accuracy plot](https://user-images.githubusercontent.com/79724188/151441605-ef15c725-7d97-4e4e-b0b6-ef0b18323e9e.png)
+![accuracy plot](https://user-images.githubusercontent.com/79724188/151620353-39cd4dd9-df0e-453c-9eed-3e403ca12ed5.png)
