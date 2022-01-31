@@ -1,4 +1,4 @@
-# Otoscopy Predictions
+# Enabling Otoscopy Predictions for Hearing Infection
 
 Using otoscopy images with neural networks to predict whether someone's ear has an infection. Here we will use some convolutional neural networks to predict if the otoscopy contains an ear that is abnormal (has acute otitis media) or normal (no infection).
 
